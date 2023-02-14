@@ -13,12 +13,8 @@ const images = [
   },
 ];
 
-// const items = images.map((image) => `<li class = "gallery__item"><img class = "gallery__image" src = "${image.url}" alt = "${image.alt}" width = "700"></li>`).join('');
+const items = images.map(image => `<li class = "gallery__item"><img class = "gallery__image" src = "${image.url}" alt = "${image.alt}" width = "700"></li>`).join('');
 
-// const list = document.querySelector('.gallery');
+console.log(items);
 
-// list.insertAdjacentHTML('afterbegin', items);
-
-// console.log(list);
-
-document.querySelector('.gallery').insertAdjacentHTML('afterbegin', images.map((image) => `<li class = "gallery__item"><img class = "gallery__image" src = "${image.url}" alt = "${image.alt}" width = "700"></li>`).join(''));
+document.querySelector('.gallery').insertAdjacentHTML('afterbegin', items);
